@@ -2,13 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 a,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
   padding: 3px;
+}
+
+:root {
+  --back-text: '#2C2D35';
+  --gray-text: '#86928B';
 }
 
 @media (hover: hover) {
@@ -22,6 +26,54 @@ a,
     display: flex;
     place-items: center;
   } */
+}
 
-  
+.devider-gray {
+  display: none;
+}
+
+.text__btn-green {
+  color: rgb(89, 141, 102);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.heading {
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0%;
+}
+
+.btn-text {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.heading-black {
+  color: var(--back-text);
+}
+
+@media screen and (max-width: 690px) {
+  .heading {
+    font-size: 30px;
+  }
+  .btn-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .heading {
+    font-size: 24px;
+  }
 }

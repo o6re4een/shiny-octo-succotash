@@ -1,18 +1,19 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Header from './components/Header.vue'
+import { RouterView } from 'vue-router'
+import HeaderComponent from './components/HeaderComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 </script>
 
 <template>
-
-  <header>
-    <Header></Header>
-
-  </header>
-  <div class="container flex justify-center">
-    <RouterView />
+  <div class="">
+    <header>
+      <HeaderComponent></HeaderComponent>
+    </header>
+    <div class="">
+      <RouterView />
+    </div>
+    <FooterComponent></FooterComponent>
   </div>
-
 </template>
 
 <style src="@/assets/main.css">
